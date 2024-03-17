@@ -1,9 +1,10 @@
 import React from "react";
 import { Card, Img, Box } from "./styled";
 import Button from "../Button";
+import { saveDocument } from "../../utils/saveDocument";
 
 const CardProject = ({ item }) => {
-  const { title, img } = item;
+  const { title, img, documentPDF } = item;
 
   if (!img?.type) {
     return <></>;
@@ -14,7 +15,13 @@ const CardProject = ({ item }) => {
       <Img src={img?.type} />
       <Box>
         <span>{title}</span>
-        <Button>Скачать проект</Button>
+        <Button
+          onClick={() => {
+            saveDocument(documentPDF);
+          }}
+        >
+          Скачать проект
+        </Button>
       </Box>
     </Card>
   );

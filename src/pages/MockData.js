@@ -8,12 +8,15 @@ import ProjectImg7 from "../assets/project/two-story/1_project/1.jpg";
 import ProjectImg8 from "../assets/project/two-story/2_project/2.jpg";
 import ProjectImg9 from "../assets/project/two-story/3_project/3.jpg";
 
+import ProjectDock1 from "../assets/project/attic/1_project/1.pdf";
+
 export const projects = [
   {
     id: "project_1",
     title:
       "1 этаж, площадь застройки 96,3 кв.м., площадь здания 75,23 кв.м., 3спальни",
     img: <ProjectImg1 />,
+    documentPDF: ProjectDock1,
   },
   {
     id: "project_2",
