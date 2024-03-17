@@ -17,6 +17,13 @@ import ProjectDock6 from "../assets/project/attic/1_project/1.pdf";
 import ProjectDock7 from "../assets/project/attic/1_project/1.pdf";
 import ProjectDock8 from "../assets/project/attic/1_project/1.pdf";
 
+import OurWorkImg1 from "../assets/our-works/our-work_1.webp";
+import OurWorkImg2 from "../assets/our-works/our-work_2.webp";
+import OurWorkImg3 from "../assets/our-works/our_work_3.webp";
+import OurWorkImg4 from "../assets/our-works/our_work_4.webp";
+import OurWorkImg5 from "../assets/our-works/our_work_5.webp";
+import OurWorkImg6 from "../assets/our-works/our_work_6.webp";
+
 export const projects = [
   {
     id: "project_1",
@@ -81,41 +88,41 @@ export const doneProjects = [
     title: `Дом из кирпича 93кв.м. ПЧО, 3 спальни`,
     price: "4190000",
     date: "13.09.2023",
-    img: <ProjectImg1 />,
+    img: <OurWorkImg1 />,
   },
   {
     id: "done_work_2",
     title: `Дом из керамзито-бетонного блока с чистовой отделкой 310кв.м.`,
     price: "9787000",
     date: "28.10.2022",
-    img: <ProjectImg1 />,
+    img: <OurWorkImg2 />,
   },
   {
     id: "done_work_3",
     title: `Дом из кирпича Poromax 245кв.м. в ПЧО`,
     price: "12436000",
     date: "02.11.2022",
-    img: <ProjectImg1 />,
+    img: <OurWorkImg3 />,
   },
   {
     id: "done_work_4",
     title: `Дом из керамзито-бетонного блока. 145кв.м. в ПЧО`,
     price: "6977000",
     date: "11.11.2022",
-    img: <ProjectImg1 />,
+    img: <OurWorkImg4 />,
   },
   {
     id: "done_work_5",
     title: `Коммерческое здание с отделкой и мебелью. 182кв.м.`,
     price: "11434000",
     date: "03.03.2023",
-    img: <ProjectImg1 />,
+    img: <OurWorkImg5 />,
   },
   {
     id: "done_work_6",
     title: `Дом из керамзито-бетонного блока. 88кв.м. в ПЧО`,
     price: "4690000",
     date: "17.03.2023",
-    img: <ProjectImg1 />,
+    img: <OurWorkImg6 />,
   },
 ];

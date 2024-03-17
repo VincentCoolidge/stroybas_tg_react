@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Card = styled.li`
   display: flex;
   width: 100%;
+  background-color: white;
 `;
 
 export const Column = styled.div`
