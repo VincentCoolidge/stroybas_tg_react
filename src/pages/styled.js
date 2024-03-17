@@ -5,8 +5,7 @@ export const Container = styled.div`
 `;
 
 export const List = styled.div`
-  display: flex;
-  flex-flow: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 15px;
 `;
