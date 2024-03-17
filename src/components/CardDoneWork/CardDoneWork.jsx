@@ -1,36 +1,51 @@
+import {
+  Card,
+  Column,
+  Img,
+  Title,
+  Box,
+  LabelPrice,
+  Price,
+  Abbr,
+} from "./styled";
+
+import Button from "../Button";
+
 const CardDoneWork = ({ item }) => {
-  console.log("item", item);
+  const { date, price, title, img } = item;
+
+  console.log("title", title);
+
+  if (!img?.type) {
+    return <></>;
+  }
 
   return (
-    <li className="list_item_ourWorks">
-      <div className="list_item_column_ourWorks">
-        {/* <img className="list_item_img_ourWorks" src={OurWork1} /> */}
-        <div className="list_item_title_ourWorks">
-          Дом из кирпича <b>93 </b>кв.м. ПЧО, <b>3</b> спальни
-        </div>
-        <div className="list_item_box_price_ourWorks">
-          <div className="list_item_left_price_ourWorks">
+    <Card>
+      <Column>
+        <Img src={img?.type} />
+        <Title>{title}</Title>
+        <Box>
+          <LabelPrice>
             Стоимость <br /> строительства от
-          </div>
+          </LabelPrice>
           <div>
-            <b className="list_item_right_1_price_ourWorks">4190000</b>{" "}
-            <span className="list_item_right_2_price_ourWorks">руб</span>
+            <Price>{price}</Price> <Abbr>руб</Abbr>
           </div>
-        </div>
-        <div className="list_item_box_price_ourWorks">
-          <div className="list_item_left_price_ourWorks">Дата постройки</div>
+        </Box>
+        <Box>
+          <LabelPrice>Дата постройки</LabelPrice>
           <div>
-            <b className="list_item_right_1_price_ourWorks">13.09.2023</b>
+            <Price>{date}</Price>
           </div>
-        </div>
-        <button
+        </Box>
+        <Button
         //   onClick={() => onButtonClick(PdfOurWork1)}
-          className="list_item_download-documents_ourWorks"
         >
           Скачать документ
-        </button>
-      </div>
-    </li>
+        </Button>
+      </Column>
+    </Card>
   );
 };
 
