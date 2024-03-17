@@ -1,20 +1,18 @@
-import { useEffect } from "react";
-import "./App.css";
+import { GlobalStyle } from "./globalStyle";
+import { Route, Routes } from "react-router-dom";
 
-const tg = window.Telegram.WebApp;
+import Main from "./pages/Main";
+import Form from "./pages/Form";
 
 function App() {
-  const onClose = () => tg.onClose();
-
-  useEffect(() => {
-    tg.ready();
-  }, []);
-
   return (
-    <div className="App">
-      bode
-      <button onClick={onClose}>Закрыть</button>
-    </div>
+    <>
+      <GlobalStyle />
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/form" element={<Form />} />
+      </Routes>
+    </>
   );
 }
 
