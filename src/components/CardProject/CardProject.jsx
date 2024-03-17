@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Img, Box } from "./styled";
+import { Card, Img, Box, Title } from "./styled";
 import Button from "../Button";
 import { saveDocument } from "../../utils/saveDocument";
 
@@ -14,7 +14,7 @@ const CardProject = ({ item }) => {
     <Card>
       <Img src={img?.type} />
       <Box>
-        <span>{title}</span>
+        <Title>{title}</Title>
         <Button
           onClick={() => {
             saveDocument(documentPDF);

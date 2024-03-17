@@ -7,7 +7,6 @@ export const Card = styled.div`
   height: 400px;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   border-radius: 20px;
-  gap: 15px;
 `;
 
 export const Box = styled.div`
@@ -24,4 +23,11 @@ export const Img = styled.img`
   object-fit: cover;
   height: 240px;
   width: 100%;
+`;
+
+export const Title = styled.span`
+  font-size: 20px;
+  color: #282828;
+  font-weight: 700;
+  padding: 0 10px;
 `;

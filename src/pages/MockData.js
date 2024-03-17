@@ -9,6 +9,13 @@ import ProjectImg8 from "../assets/project/two-story/2_project/2.jpg";
 import ProjectImg9 from "../assets/project/two-story/3_project/3.jpg";
 
 import ProjectDock1 from "../assets/project/attic/1_project/1.pdf";
+import ProjectDock2 from "../assets/project/attic/2_project/2.pdf";
+import ProjectDock3 from "../assets/project/one-story/1_project/1.pdf";
+import ProjectDock4 from "../assets/project/attic/1_project/1.pdf";
+import ProjectDock5 from "../assets/project/attic/1_project/1.pdf";
+import ProjectDock6 from "../assets/project/attic/1_project/1.pdf";
+import ProjectDock7 from "../assets/project/attic/1_project/1.pdf";
+import ProjectDock8 from "../assets/project/attic/1_project/1.pdf";
 
 export const projects = [
   {
