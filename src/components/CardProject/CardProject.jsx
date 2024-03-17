@@ -1,5 +1,6 @@
 import React from "react";
-import { Card, Img } from "./styled";
+import { Card, Img, Box } from "./styled";
+import Button from "../Button";
 
 const CardProject = ({ item }) => {
   const { title, img } = item;
@@ -11,13 +12,10 @@ const CardProject = ({ item }) => {
   return (
     <Card>
       <Img src={img?.type} />
-      <div className="list_item_title_projects">{title}</div>
-      {/* <button
-        onClick={() => onButtonClick(Project11)}
-        className="list_item_download-documents_projects"
-      >
-        Скачать проект
-      </button> */}
+      <Box>
+        <span>{title}</span>
+        <Button>Скачать проект</Button>
+      </Box>
     </Card>
   );
 };

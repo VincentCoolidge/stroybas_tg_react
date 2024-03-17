@@ -10,6 +10,14 @@ export const Card = styled.div`
   gap: 15px;
 `;
 
+export const Box = styled.div`
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0 15px;
+`;
+
 export const Img = styled.img`
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
