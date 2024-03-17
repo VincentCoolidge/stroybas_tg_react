@@ -1,10 +1,16 @@
 import React from "react";
-import { Card } from "./styled";
+import { Card, Img } from "./styled";
 
-const CardProject = ({ title }) => {
+const CardProject = ({ item }) => {
+  const { title, img } = item;
+
+  if (!img?.type) {
+    return <></>;
+  }
+
   return (
     <Card>
-      {/* <img className="list_item_img_projects" src={Img11} /> */}
+      <Img src={img?.type} />
       <div className="list_item_title_projects">{title}</div>
       {/* <button
         onClick={() => onButtonClick(Project11)}

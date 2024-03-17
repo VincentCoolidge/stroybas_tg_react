@@ -9,3 +9,11 @@ export const Card = styled.div`
   border-radius: 20px;
   gap: 15px;
 `;
+
+export const Img = styled.img`
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  object-fit: cover;
+  height: 160px;
+  width: 100%;
+`;
