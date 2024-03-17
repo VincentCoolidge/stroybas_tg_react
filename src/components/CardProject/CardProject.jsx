@@ -4,7 +4,7 @@ import Button from "../Button";
 import { saveDocument } from "../../utils/saveDocument";
 
 const CardProject = ({ item }) => {
-  const { title, img, documentPDF } = item;
+  const { title, img, documentPDF, id } = item;
 
   if (!img?.type) {
     return <></>;
@@ -12,7 +12,7 @@ const CardProject = ({ item }) => {
 
   return (
     <Card>
-      <Img src={img?.type} />
+      <Img $objFit={id === "project_5"} src={img?.type} />
       <Box>
         <Title>{title}</Title>
         <Button
